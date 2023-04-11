@@ -22,6 +22,8 @@ Author: [Albert Chen](https://github.com/albertcchen)
 
 ## Exploratory Data Analysis
 
+---
+
 ## Modeling
 
 ---
