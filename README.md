@@ -12,7 +12,7 @@ Author: [Albert Chen](https://github.com/albertcchen)
 
 The data set was provided by the UCI Machine Learning Respository and can be found [here] (https://archive.ics.uci.edu/ml/datasets/Drug+Review+Dataset+%28Drugs.com%29) and accessed on March 31st, 2023.
 
-This data set was the result of a study done by [Surya Kallumadi](surya@ksu.edu)  and [Felix Gräßer](felix.graesser@tu-dresden.de) in order to gain insights regarding sentiment analysis of user reviews within the pharmaceutical field. Their work can be found [here](https://dl.acm.org/doi/10.1145/3194658.3194677)
+This data set was the result of a study done by [Surya Kallumadi](surya@ksu.edu)  and [Felix Gräßer](felix.graesser@tu-dresden.de) in order to gain insights regarding sentiment analysis of user reviews within the pharmaceutical field. Their work can be found [here](https://dl.acm.org/doi/10.1145/3194658.3194677).
 
 The data accessed provides patient reviews on specific drugs with related conditions and a 10 star patient rating regarding overall patient satisfaction from the website Drugs.com.
 
@@ -29,15 +29,39 @@ Attributes of the data are as follows:
 
 ## Buisiness Problem
 
----
+Customer reviews and opinions can help provide important information regarding customer preferences. From this data, an automated sentiment approach to reviewing the data regarding drugs treating particular conditions and within the different types of drugs for each condition was created. 
 
+The plan is to train and determine which model can help predict sentiment from the reviews, and which are the most important key words in these reviews to see if there are key words that can be extracted.
+
+---
 ## Data Review
+
+
 
 ---
 
 ## Data Cleaning & Feature Engineering
 
 
+
+**Features added**
+
+Sentiment column - Created a new column where the value is either 'Negative' or 'Positive' based on the user rating. Assigned ratings greater than 7.0 as positive and everything else as negative.
+
+Punctuation emphasis - Counted the number of punctuations used to see if this would have an impact on our analysis
+
+Capitalization emphasis - Counted the number of capitalizations used in the review to see if this had an impact on our analysis
+
+**Data Cleaning**
+
+I cleaned the text using a number of functions (clean_text) that consists of:
+
+- Converting text to lower case
+- Replacing html apostrophes with an actual apostrophe
+- Expanding contractions to separate words to determine if these words are important
+- Removing punctuation but ignore contractions
+- Removing stopwords
+- Lemmatizing words
 
 ---
 
@@ -46,6 +70,10 @@ Attributes of the data are as follows:
 ---
 
 ## Modeling
+
+### First Simple Model
+
+###
 
 ---
 
