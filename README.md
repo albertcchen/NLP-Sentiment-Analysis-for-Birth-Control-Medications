@@ -164,7 +164,7 @@ There are a number of next steps that can be taken for this process:
 
 1. Apply what has been learned here with birth control treatments to other conditions within the data set. 
 
-2. Utilize BERT modeling for more advanced language processing
+2. Utilize BERT modeling for more advanced language processing.
 
 3. Live integration through application implementation which would show real time data visualization, sentiment against time, and highlight key words that are associated with respective sentiment.
 
